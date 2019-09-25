@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.iosBase2</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.iosBase_Definitions</string>
+    </array>
+    <key>Platforms</key>
+    <array>
+        <string>com.apple.platform.iphoneos</string>
+    </array>
+    <key>Project</key>
+    <dict>
+        <key>SDK</key>
+        <string>iphoneos</string>
+        <key>SharedSettings</key>
+        <dict>
+            <key>IPHONEOS_DEPLOYMENT_TARGET</key>
+            <!--<string>latest_iphoneos</string>-->
+            <string>12.0</string>
+        </dict>
+        <key>Configurations</key>
+        <dict>
+            <key>Release</key>
+            <dict>
+                <key>VALIDATE_PRODUCT</key>
+                <string>YES</string>
+            </dict>
+        </dict>
+    </dict>
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>SharedSettings</key>
+            <dict>
+                <key>TARGETED_DEVICE_FAMILY</key>
+                <string>1,2</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

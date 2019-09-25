@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.singleViewApplication2</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication2</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>NameOfInitialFileForEditor</key>
+	<string>ContentView.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<array>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Code</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.m:imports:importHeader:ViewController.h</string>
+							<string>SceneDelegate.m:imports:importHeader:ViewController.h</string>
+							<string>ViewController.h:comments</string>
+							<string>ViewController.h:imports:importCocoa</string>
+							<string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+							<string>ViewController.m:comments</string>
+							<string>ViewController.m:imports:importHeader:ViewController.h</string>
+							<string>ViewController.m:extension</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad:super</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad:body</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>AppDelegate.m:implementation:methods:applicationwillFinishLaunchingWithOptions:body</key>
+							<string>// Override point for customization after application launch.
+if (@available(iOS 13.0, *)) {
+    // In iOS 13 setup is done in SceneDelegate
+} else {
+    UIWindow *window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window = window;
+
+    ViewController *viewController = [[ViewController alloc] init];
+    window.rootViewController = viewController;
+}
+</string>
+							<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+							<string>// Override point for customization after application launch.
+if (@available(iOS 13.0, *)) {
+    // In iOS 13 setup is done in SceneDelegate
+} else {
+    [self.window makeKeyAndVisible];
+}
+</string>
+							<key>SceneDelegate.m:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+self.window = window;
+
+ViewController *viewController = [[ViewController alloc] init];
+window.rootViewController = viewController;
+[window makeKeyAndVisible];
+</string>
+							<key>ViewController.m:implementation:methods:viewDidLoad:body</key>
+							<string>self.view.backgroundColor = UIColor.blueColor; // TODO: Proof we have loaded</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.h:comments</string>
+							<string>ViewController.h:imports:importCocoa</string>
+							<string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+							<string>ViewController.m:comments</string>
+							<string>ViewController.m:imports:importHeader:ViewController.h</string>
+							<string>ViewController.m:extension</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad:super</string>
+							<string>Info.plist:UIMainStoryboardFile</string>
+							<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>98</integer>
+							</dict>
+							<key>Info.plist:UIMainStoryboardFile</key>
+							<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+						</dict>
+					</dict>
+				</array>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Code</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:body</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>AppDelegate.swift:implementation:methods:applicationWillFinishLaunchingWithOptions:body</key>
+							<string>// Override point for customization after application launch.
+if #available(iOS 13.0, *) {
+    // In iOS 13 setup is done in SceneDelegate
+} else {
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    self.window = window
+
+    let viewController = ViewController()
+    window.rootViewController = viewController
+}
+
+</string>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+							<string>// Override point for customization after application launch.
+if #available(iOS 13.0, *) {
+    // In iOS 13 setup is done in SceneDelegate
+} else {
+    self.window?.makeKeyAndVisible()
+}
+
+</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>guard let windowScene = (scene as? UIWindowScene) else { return }
+
+let window = UIWindow(windowScene: windowScene)
+self.window = window
+
+let viewController = ViewController()
+window.rootViewController = viewController
+window.makeKeyAndVisible()</string>
+							<key>ViewController.swift:implementation:methods:viewDidLoad:body</key>
+							<string>self.view.backgroundColor = .blue // TODO: Proof we have loaded</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+							<string>Info.plist:UIMainStoryboardFile</string>
+							<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>98</integer>
+							</dict>
+							<key>Info.plist:UIMainStoryboardFile</key>
+							<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>User Interface:</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Values</key>
+			<array>
+				<string>Code</string>
+				<string>Storyboard</string>
+			</array>
+			<key>RequiredOptionsForValues</key>
+			<dict/>
+			<key>Default</key>
+			<string>Storyboard</string>
+			<key>Type</key>
+			<string>popup</string>
+		</dict>
+	</array>
+</dict>
+</plist>
