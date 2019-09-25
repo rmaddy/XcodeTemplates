@@ -15,4 +15,4 @@ This template is based on the standard Single View App template from Xcode 11. T
 
 The key differences in the resulting project are the addition of the `window` property in the AppDelegate which is needed for iOS 12. Several of the `UIApplicationDelegate` methods are added in support of iOS 12.
 
-If you should the Code based user interface, the main storyboard is removed and code is added to both the AppDelegate and the SceneDelegate to create the main window as well as setup `ViewController` as the root view controller.
+If you choose the Code based user interface, the main storyboard is removed and code is added to both the AppDelegate and the SceneDelegate to create the main window as well as setup `ViewController` as the root view controller.
